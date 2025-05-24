@@ -1,3 +1,102 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: center; /* Centers the navbar content */
+    align-items: center;
+    background: #2ea8b6;
+    padding: 15px 20px;
+    position: relative;
+}
+
+/* Logo Styling */
+.logo {
+    width: 90px; /* Minimized size */
+    height: auto;
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centers the links */
+    text-align: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(22, 93, 168);
+    font-weight: bold;
+    font-size: 20px; /* Makes text bigger */
+    font-weight: bold;
+}
+
+
+
+/* Hamburger Menu */
+.hamburger {
+
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    left: 10px; /* Moves it to the left corner */
+}
+
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #317b39;
+        width: 120px;
+        text-align: center;
+        padding: 10px;
+    }
+    .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns menu text to the left */
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 200px;
+    background: #754cb8;
+    padding: 10px;
+    z-index: 1000;
+}
+
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .logo {
+        width: 40px; /* Further reduced for mobile */
+    }
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
@@ -5,7 +104,7 @@ body {
     padding: 0;
 }
 nav {
-    background-color: #ffffff;
+    background-color: #0f6fa3;
     padding: 5px 0; /* Reduced padding */
     height: 45px; /* Adjusted height */
     width: 80%; /* Reduced width */
@@ -52,10 +151,7 @@ a {
     
 }
 
-nav {
-    background-color: #ffffff;
-    padding: 10px 0;
-}
+
 
 ul {
     list-style: none;
@@ -73,7 +169,7 @@ li {
 a {
     text-decoration: none;
     color: #004d4d;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .logo a {
@@ -87,11 +183,11 @@ a {
     object-fit: cover; /* Ensures the image fills the circle */
 }
 .container {
-    margin-top: 20px; /* Top-bottom: 10px, Left-right: 80px */
-    margin-bottom: 20px;
+    margin-top: 18px; /* Top-bottom: 10px, Left-right: 80px */
+    margin-bottom: 18px;
     margin-left: 10%;
     margin-right: 10%;
-    padding: 20px;
+    padding: 25px;
     background-color: #bcd95e; /* Light background */
     /* Rounded corners */
     box-shadow: 0px 4px 6px rgba(206, 199, 199, 0.959); /* Subtle shadow */
@@ -100,7 +196,7 @@ a {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
     text-align: center;
-    width: 90%; /* Expands but stays responsive */
+    width: 100%; /* Expands but stays responsive */
     max-width: 930px; /* Limits excessive stretching */
     height: auto; /* Allows content to expand naturally */
     min-height: 300px; /* Ensures a minimum height */
@@ -186,7 +282,7 @@ h1 {
 }
 
 p {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
 }
 .wel1{
@@ -244,7 +340,7 @@ p {
     background-color: #007bff;
     color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -316,7 +412,7 @@ p {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-    max-width: 220px;
+    max-width: 260px;
 }
 
 .testimonial2 {
@@ -325,14 +421,14 @@ p {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-    max-width: 220px;
+    max-width: 260px;
 }
 .testimonial3 {
     background: lab(16.01% -10.14 -3.88);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-    max-width: 220px;
+    max-width: 260px;
 
 }
 
