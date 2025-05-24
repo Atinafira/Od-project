@@ -1,3 +1,6 @@
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
 function scrollToSection(sectionId) {
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
 }
@@ -30,3 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
         navLinks.classList.toggle("active");
     });
 });
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
